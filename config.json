@@ -1,0 +1,27 @@
+{
+    "version_build": {
+        "version": "1.0.0",
+        "build": 1
+    },
+    "environments": {
+        "dev": {
+            "assets": {
+            }
+        },
+        "test": {
+            "assets": {
+                "assets/config/dev/": "assets/config/test/"
+            }
+        },
+        "prod": {
+            "assets": {
+                "assets/config/dev/": "assets/config/prod/"
+            }
+        }
+    },
+    "build_commands": {
+        "ios": true,
+        "android_bundle": true,
+        "android_apk": false
+    }
+}
